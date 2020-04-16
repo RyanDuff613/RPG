@@ -21,9 +21,25 @@ export class Player {
   }
 
   hunt(){
-    return this.health;
+    const minimum = 5;
+    const maximum = 21;
+    let huntPoints = Math.floor(Math.random() * (maximum-minimum)) +  minimum; 
+    
+    if (huntPoints < 10) {
+      this.health -= huntPoints;
+    } else {
+      this.health += huntPoints;
+    }
   }
   gamble(){
-    return this.gold;
+    const minimum = 5;
+    const maximum = 21;
+    let gamblePoints = Math.floor(Math.random() * (maximum-minimum)) +  minimum; 
+    
+    if (gamblePoints < 10) {
+      this.gold -= gamblePoints;
+    } else {
+      this.gold += gamblePoints;
+    }
   }
 }
