@@ -13,7 +13,6 @@ describe('Player', () => {
     const player = new Player('andy');
     player.attack();
     expect(player.health).not.toBe(50);
-
   });
 
 });

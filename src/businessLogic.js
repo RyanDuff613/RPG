@@ -15,7 +15,7 @@ export class Player {
     if (attackPoints < 10) {
       this.health -= attackPoints;
     } else {
-      this.strength += attackPoints;
+      this.health += attackPoints;
     }
   }
 }
