@@ -10,3 +10,5 @@ export class Player {
     return 0;
   }
 }
+
+// player.attack()
