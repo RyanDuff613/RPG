@@ -6,7 +6,7 @@ describe('Player', () => {
     var player = new Player('andy');
     expect(player.name).toEqual('andy');
     expect(player.health).toEqual(50);
-    expect(player.strenght).toEqual(50);
+    expect(player.strength).toEqual(50);
   });
 
 });
