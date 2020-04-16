@@ -6,7 +6,7 @@ export class Player {
     this.magic = 50;
   }
 
-  checkType(){
+  attack(){
     return 0;
   }
 }

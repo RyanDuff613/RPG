@@ -9,4 +9,9 @@ describe('Player', () => {
     expect(player.strength).toEqual(50);
   });
 
+  test('should return an instance of Player with health not equal to 50', () => {
+    player.attack()
+
+  });
+
 });
