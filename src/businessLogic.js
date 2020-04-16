@@ -4,6 +4,7 @@ export class Player {
     this.health = 50;
     this.strength = 50;
     this.magic = 50;
+    this.gold = 20;
   }
  
 
@@ -13,9 +14,16 @@ export class Player {
     let attackPoints = Math.floor(Math.random() * (maximum-minimum)) +  minimum; 
     
     if (attackPoints < 10) {
-      this.health -= attackPoints;
+      this.strength -= attackPoints;
     } else {
-      this.health += attackPoints;
+      this.strength += attackPoints;
     }
+  }
+
+  hunt(){
+    return this.health;
+  }
+  gamble(){
+    return this.gold;
   }
 }

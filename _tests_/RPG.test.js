@@ -12,7 +12,7 @@ describe('Player', () => {
   test('should return an instance of Player with health not equal to 50', () => {
     const player = new Player('andy');
     player.attack();
-    expect(player.health).not.toBe(50);
+    expect(player.strength).not.toBe(50);
   });
 
 });
