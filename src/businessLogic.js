@@ -5,10 +5,17 @@ export class Player {
     this.strength = 50;
     this.magic = 50;
   }
+ 
 
-  attack(){
-    return 0;
+  attack() {
+    const minimum = 5;
+    const maximum = 21;
+    let attackPoints = Math.floor(Math.random() * (maximum-minimum)) +  minimum; 
+    
+    if (attackPoints < 10) {
+      this.health -= attackPoints;
+    } else {
+      this.strength += attackPoints;
+    }
   }
 }
-
-// player.attack()
