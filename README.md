@@ -21,6 +21,9 @@
 
 | Behavior       | Input         | Output  |
 | ------------- |:-------------:| -----:|
+| User loads page, presses 'start' button and is given an instance of player 1, with various attributes (health, magic, level etc) and is prompted to take an action | User clicks start game button | Page creates instance of Player 1|
+| User selects an action and is returned an updated list of values and attributes | "Attack" | strength value increased or health value decreased |
+| As a result of a user action player values in an attribute are increased beyond a certain value, player "levels up" and is given new attributes | "Attack" | 'strength' > 100, add ability to carry larger weapons |  
 | User clicks attack |  Player 1 attacks Player 2 | Player 2 health should decrease  |
 
 ## Known Bugs
