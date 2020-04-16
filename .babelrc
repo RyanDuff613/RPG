@@ -1,7 +1,7 @@
 {
-  "env":{
+  "env": {
     "test": {
-      "plugins": ["@babel/plugins-transform-module-commonjs"]
+      "plugins": ["@babel/plugin-transform-modules-commonjs"]
     }
   }
 }
